@@ -5,7 +5,7 @@ Coroutine with ES6 generators simple as never before.
 ## Install
 
 ```
-npm i ruff --save
+npm i ruff -S
 ```
 
 ## How to use?
@@ -20,7 +20,7 @@ ruff(function*() {
     
     console.log(result)
 }).on('error', function(error) {
-    console.log(error);
+    console.error(error);
 });
 ```
 ### Parallel execution
@@ -38,7 +38,7 @@ ruff(function*() {
     yield [first, second];
     console.log('done');
 }).on('error', function(error) {
-    console.log(error);
+    console.error(error);
 }).on('end', function() {
     console.log('ok what\'s next?');
 });
